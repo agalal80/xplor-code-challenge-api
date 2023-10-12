@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="HttpClients\" />
+    <None Remove="JorgeSerrano.Json.JsonSnakeCaseNamingPolicy" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HttpClients\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XplorCodeChallenge.Core\XplorCodeChallenge.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="JorgeSerrano.Json.JsonSnakeCaseNamingPolicy" Version="0.9.0" />
+  </ItemGroup>
+</Project>
